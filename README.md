@@ -11,26 +11,7 @@ A clinical decision-support system for Alzheimer's disease screening that combin
 - **RAG explanations** — FAISS retrieval over peer-reviewed PDFs + local Ollama LLM
 - **Combined multimodal report** — merged PDF / HTML / Markdown report for both modalities
 
----
 
-## Screenshots
-
-### Home
-![Home](docs/screenshots/home.png)
-
-### Brain Scan Analysis (CN — 94% confident)
-![Brain Scan](docs/screenshots/brain_scan.png)
-
-### Speech & Language Analysis
-![Speech](docs/screenshots/speech.png)
-
-### Reports & History
-![Reports](docs/screenshots/reports.png)
-
-### About
-![About](docs/screenshots/about.png)
-
----
 
 ## Architecture
 
