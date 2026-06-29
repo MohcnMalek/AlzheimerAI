@@ -1,0 +1,23 @@
+.accordion { padding: 0; overflow: hidden; }
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 16px 22px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  color: var(--text);
+  text-align: left;
+}
+.header:hover { background: rgba(47, 175, 112, 0.04); }
+
+.title { font-size: 14.5px; font-weight: 700; color: var(--text); }
+
+.chevron { color: var(--muted); transition: transform 0.22s ease; flex-shrink: 0; }
+.chevronOpen { transform: rotate(180deg); }
+
+.body { overflow: hidden; transition: max-height 0.28s cubic-bezier(0.4, 0, 0.2, 1); }
+.inner { padding: 0 22px 20px; }

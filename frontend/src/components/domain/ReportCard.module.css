@@ -1,0 +1,11 @@
+.card { display: flex; flex-direction: column; gap: 12px; }
+.topRow { display: flex; align-items: flex-start; justify-content: space-between; gap: 10px; }
+.meta { display: flex; flex-direction: column; gap: 3px; }
+.analysisType { font-size: 14px; font-weight: 700; color: var(--text); }
+.analysisId { font-size: 11.5px; font-family: monospace; color: var(--muted); }
+.date { font-size: 12px; color: var(--muted); }
+.badge { font-size: 11px; font-weight: 700; padding: 3px 10px; border-radius: 999px; white-space: nowrap; }
+.buttons { display: flex; gap: 8px; flex-wrap: wrap; }
+.dlBtn { display: inline-flex; align-items: center; gap: 6px; padding: 6px 14px; border-radius: var(--radius-sm); font-size: 12.5px; font-weight: 600; color: var(--text); background: var(--surface-soft); border: 1px solid var(--line); cursor: pointer; transition: background var(--transition), border-color var(--transition), color var(--transition); }
+.dlBtn:hover { background: white; border-color: var(--emerald); color: var(--emerald); }
+.noFiles { font-size: 13px; color: var(--muted); font-style: italic; margin: 0; }

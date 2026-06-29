@@ -1,0 +1,4 @@
+@keyframes spin { to { transform: rotate(360deg); } }
+.wrapper { display: flex; flex-direction: column; align-items: center; gap: 10px; padding: 16px 0; }
+.ring { border-style: solid; border-color: var(--line); border-top-color: var(--emerald); border-radius: 50%; animation: spin 0.7s linear infinite; flex-shrink: 0; }
+.message { font-size: 13px; color: var(--muted); font-weight: 500; margin: 0; }

@@ -1,0 +1,27 @@
+.card { display: flex; flex-direction: column; gap: 12px; }
+.header { display: flex; align-items: center; justify-content: space-between; }
+.title { font-size: 14px; font-weight: 700; color: var(--text); margin: 0; }
+
+.badgeActive { background: var(--emerald-soft); color: var(--emerald); font-size: 11px; font-weight: 700; padding: 3px 10px; border-radius: 999px; }
+.badgeNone { background: var(--surface-soft); color: var(--muted); font-size: 11px; font-weight: 600; padding: 3px 10px; border-radius: 999px; }
+
+.idRow { display: flex; align-items: center; gap: 8px; }
+.caseId { font-family: monospace; font-size: 13px; font-weight: 600; color: var(--text); flex: 1; word-break: break-all; }
+.iconBtn { background: transparent; border: none; padding: 4px; cursor: pointer; color: var(--muted); border-radius: 6px; display: flex; align-items: center; }
+.iconBtn:hover { background: var(--surface-soft); }
+
+.divider { border: none; border-top: 1px solid var(--line); margin: 0; }
+
+.fileRow { display: flex; flex-direction: column; gap: 8px; }
+.fileItem { display: flex; justify-content: space-between; align-items: center; font-size: 12.5px; }
+.fileLabel { color: var(--muted); font-weight: 500; }
+.fileValue { font-weight: 600; max-width: 55%; text-align: right; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.fileSet { color: var(--emerald); }
+.fileEmpty { color: var(--muted); font-style: italic; font-weight: 400; }
+
+.resetBtn { display: flex; align-items: center; gap: 6px; font-size: 12px; font-weight: 600; color: var(--muted); background: transparent; border: 1px solid var(--line); border-radius: var(--radius-sm); padding: 6px 12px; width: 100%; justify-content: center; transition: color var(--transition), border-color var(--transition); }
+.resetBtn:hover { color: var(--emerald); border-color: var(--emerald); }
+
+.emptyState { display: flex; flex-direction: column; align-items: center; gap: 12px; padding: 8px 0; }
+.emptyText { font-size: 13px; color: var(--muted); text-align: center; line-height: 1.5; }
+.createBtn { display: flex; align-items: center; gap: 6px; font-size: 13px; font-weight: 600; color: white; background: linear-gradient(135deg, var(--emerald), var(--deep)); border: none; border-radius: var(--radius-sm); padding: 8px 16px; cursor: pointer; }

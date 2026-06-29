@@ -1,0 +1,6 @@
+.metricCard { text-align: center; padding: 18px 14px; }
+.highlight { border-color: var(--emerald); background: var(--emerald-soft); }
+.label { font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; color: var(--muted); margin-bottom: 8px; }
+.valueRow { display: flex; align-items: baseline; justify-content: center; gap: 4px; }
+.value { font-size: 24px; font-weight: 800; color: var(--text); line-height: 1; }
+.unit { font-size: 12px; font-weight: 500; color: var(--muted); }

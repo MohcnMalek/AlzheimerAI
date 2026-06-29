@@ -1,0 +1,78 @@
+.panel { display: flex; flex-direction: column; gap: 12px; }
+
+.messages {
+  max-height: 400px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 4px 2px;
+}
+
+.empty { font-size: 13px; color: var(--muted); text-align: center; padding: 24px 0; font-style: italic; }
+
+.bubble { display: flex; flex-direction: column; gap: 4px; max-width: 82%; }
+.user { align-self: flex-end; }
+.assistant { align-self: flex-start; }
+
+.roleBadge { font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; color: var(--muted); }
+.user .roleBadge { text-align: right; }
+
+.content {
+  padding: 10px 14px;
+  border-radius: var(--radius-md);
+  font-size: 13.5px;
+  line-height: 1.65;
+}
+.user .content {
+  background: linear-gradient(135deg, var(--emerald), var(--deep));
+  color: white;
+  border-bottom-right-radius: 4px;
+}
+.assistant .content {
+  background: rgba(255, 255, 255, 0.85);
+  border: 1px solid var(--line);
+  color: var(--text);
+  border-bottom-left-radius: 4px;
+}
+
+.inputRow {
+  display: flex;
+  gap: 8px;
+  align-items: flex-end;
+}
+
+.textarea {
+  flex: 1;
+  min-height: 40px;
+  max-height: 140px;
+  padding: 10px 13px;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--line);
+  font-family: inherit;
+  font-size: 13.5px;
+  resize: none;
+  overflow-y: auto;
+  line-height: 1.5;
+  background: rgba(255,255,255,0.9);
+  color: var(--text);
+  transition: border-color var(--transition), box-shadow var(--transition);
+}
+.textarea:focus { outline: none; border-color: var(--emerald); box-shadow: 0 0 0 3px rgba(47,175,112,0.14); }
+
+.sendBtn {
+  width: 40px;
+  height: 40px;
+  border-radius: var(--radius-sm);
+  background: linear-gradient(135deg, var(--emerald), var(--deep));
+  color: white;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  flex-shrink: 0;
+  transition: opacity var(--transition), transform var(--transition);
+}
+.sendBtn:hover:not(:disabled) { transform: translateY(-1px); }
+.sendBtn:disabled { opacity: 0.4; cursor: not-allowed; }
